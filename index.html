@@ -694,15 +694,9 @@ main {
         <!-- To add the real 15 August video: either host it somewhere and put the URL in src=""
              below, or convert it to base64 (e.g. `base64 -w0 video.mp4`) and use
              src="data:video/mp4;base64,...." the same way the photos above are embedded. -->
- <video
-    id="bus-video"
-    playsinline
-    controls
-    preload="metadata">
-
-    <source src="video.mp4" type="video/mp4">
-
-    
+<video width="640" height="360" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 
         <button class="tap-target" id="bus-play-btn" aria-label="Play the 15 August video" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(7,6,11,0.25);">
